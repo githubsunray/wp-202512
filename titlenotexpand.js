@@ -1,5 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+  document.querySelectorAll('.menu-item-has-children > a').forEach(link => {
+
+    // 捕获阶段，先于 Elementor 执行
+    link.addEventListener('click', function (e) {
+
+      // 阻止 Elementor 的展开逻辑
+      e.stopImmediatePropagation();
+
+      // 强制跳转（保证跳转生效）
+      window.location.href = this.href;
+
+    }, true); // 👈 捕获阶段，关键
+  });
+
+});
+
+
   const items = document.querySelectorAll('.menu-item-has-children');
 
   items.forEach(item => {
