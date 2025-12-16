@@ -1,0 +1,26 @@
+.menu-item-has-children > .sub-menu {
+  display: none;
+}
+
+.menu-item-has-children.open > .sub-menu {
+  display: block;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0 12px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.menu-item-has-children {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sub-menu {
+  overflow: hidden;
+  transition: max-height .25s ease;
+}
