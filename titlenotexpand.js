@@ -1,8 +1,5 @@
+
 document.addEventListener('DOMContentLoaded', function () {
-
-
-
-    document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.menu-item-has-children > a').forEach(link => {
 
@@ -20,6 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+
+
+    
 
   const items = document.querySelectorAll('.menu-item-has-children');
 
